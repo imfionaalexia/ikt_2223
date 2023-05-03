@@ -1,0 +1,36 @@
+<!DOCTYP html>
+<html lang ="de">
+<head>
+   <link rel="stylesheet" type="text/css" href="style2.css">
+   <meta charset = "UTF-8">
+   <meta name="viewport" content="width-device-width, inital-scale=1.0">
+   <title> 1. Lernkontrolle IKT </title>
+   <script>
+      function ChangeFont() {
+         document.getElementById("NewFont").className="NewFont";
+      } 
+
+      function ChangeSize() {
+         document.getElementById("FirstImg").className="ImgLarge";
+      }
+
+      function disappear() {
+         var aColl=document.getElementsByClassName("Images");
+         for (i=0; i<aColl.length; i++) {
+            aColl[i].style.display="none";
+         }
+
+      }
+   </script>
+</head>
+<body>
+   <header>
+      <h1> Bilderkollektion </h1>
+   </header>
+   <p id="NewFont">random Text</p>
+   <button onclick="ChangeFont()">Schriftart</button>
+   <br>
+   <img class="Images" id="FirstImg" src="test_2.jpg" onclick="ChangeSize()">
+   <button onclick="disappear()">verschwindibus</button>
+</body>
+</html>
